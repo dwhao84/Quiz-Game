@@ -5,8 +5,8 @@ from quiz_brain import QuizBrain
 question_bank = []
 
 for question in question_data:
-    question_text = question["text"]     # 找到 question["text"]的value，從dict裡面找
-    question_answer = question["answer"] # 找到 question["answer"]的value，從dict裡面找
+    question_text = question["question"]     # 找到 question["text"]的value，從dict裡面找
+    question_answer = question["correct_answer"] # 找到 question["answer"]的value，從dict裡面找
     new_q = Question(question_text, question_answer)
     question_bank.append(new_q)
     
